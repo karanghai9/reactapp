@@ -19,7 +19,7 @@ function App() {
                 <Router>
                     <Navbar className="navb" collapseOnSelect expand="lg">
                     <Navbar.Brand>
-                      <Link to="/">Game Heist</Link>
+                      <Link to={process.env.PUBLIC_URL + '/'}>Game Heist</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -38,7 +38,7 @@ function App() {
                     </Navbar>
 
                     <Switch>
-                        <Route exact path='/' component={Homepage}></Route>
+                        <Route path={process.env.PUBLIC_URL + '/'} component={Homepage}></Route>
                         <Route exact path='/matches' component={Matches}></Route>
                         <Route exact path='/tournaments' component={Tournaments}></Route>
                         <Route exact path='/upcoming' component={Upcoming}></Route>
