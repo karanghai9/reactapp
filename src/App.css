@@ -5,7 +5,6 @@ text-align: center;
 .navbar-brand {
 color: orangered !important;
 font-size: xx-large !important;
-font-weight: bolder;
 }
 
 .navb {
@@ -21,7 +20,7 @@ color: white;
 text-decoration: none;
 font-weight: bold;
 display: inline-block;
-padding: 0px 5px;
+padding: 0px 10px;
 position: relative;
 }     
 

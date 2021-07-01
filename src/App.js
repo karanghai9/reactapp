@@ -18,19 +18,23 @@ function App() {
     <div className="App">
                 <Router>
                     <Navbar className="navb" collapseOnSelect expand="lg">
-                    <Navbar.Brand href="/">Game Heist</Navbar.Brand>
+                    <Navbar.Brand>
+                      <Link to="/">Game Heist</Link>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="ml-auto">
+                        <Nav className='ml-auto'>
                         <Nav.Link><Link to="/matches">Matches</Link></Nav.Link>
                         <Nav.Link><Link to="/tournaments">Tournaments</Link></Nav.Link>
                         <Nav.Link><Link to="/upcoming">Upcoming</Link></Nav.Link>
-                        <Nav.Link><Link to="/tipsNtricks">TipsNTricks</Link></Nav.Link>
+                        <Nav.Link><Link to="/tipsNtricks">Tips and Tricks</Link></Nav.Link>
                         <Nav.Link><Link to="/help">Help</Link></Nav.Link>
-                        <Nav.Link><Link to="/about">About</Link></Nav.Link>
+                        <Nav.Link><Link to="/about">About Us</Link></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
-                    <Nav.Link><Link to="/login">Login</Link></Nav.Link>
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                      <Nav.Link><Link to="/login">Login</Link></Nav.Link>
+                    </Navbar.Collapse>
                     </Navbar>
 
                     <Switch>
