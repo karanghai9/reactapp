@@ -38,7 +38,7 @@ function App() {
                     </Navbar>
 
                     <Switch>
-                        <Route exact path='/' component={Homepage}></Route>
+                        <Route exact path={process.env.PUBLIC_URL + '/'} component={Homepage}></Route>
                         <Route exact path='/matches' component={Matches}></Route>
                         <Route exact path='/tournaments' component={Tournaments}></Route>
                         <Route exact path='/upcoming' component={Upcoming}></Route>
