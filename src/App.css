@@ -1,24 +1,50 @@
 .App {
-  text-align: center;
-  height: 100vh;
+text-align: center;
 }
 
-.App-logo {
-  pointer-events: none;
-  margin-top: 20vh;
+.navbar-brand {
+color: orangered !important;
+font-size: xx-large !important;
+font-weight: bolder;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navb {
+position: sticky !important;
+top: 0px !important;
+background-color: #141414;
+opacity: 0.85;
+z-index: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navb a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+display: inline-block;
+padding: 0px 5px;
+position: relative;
+}     
+
+.navb a:after {    
+background: none repeat scroll 0 0 transparent;
+bottom: 0;
+content: "";
+display: block;
+height: 2px;
+left: 50%;
+position: absolute;
+background: orangered;
+transition: width 0.3s ease 0s, left 0.3s ease 0s;
+width: 0;
+}
+
+.navb a:hover:after { 
+width: 100%; 
+left: 0; 
+}
+
+.navb a:hover {
+color: orangered !important;
+transition: 0.4s ease-in-out;
+text-decoration: none;
 }
